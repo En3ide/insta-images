@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Insta Images",
+  "version": "1.4.0",
+  "description": "Téléchargez les médias Instagram et activez le mode sombre sur AliExpress, Alibaba, Amazon.fr, eBay.fr et Yeggi.",
+  "permissions": ["activeTab", "scripting", "downloads", "storage"],
+  "action": { "default_title": "Extraire les images du post", "default_popup": "popup.html" },
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": [
+      "*://*.aliexpress.com/*",
+      "*://*.aliexpress.us/*",
+      "*://*.aliexpress.ru/*",
+      "*://*.alibaba.com/*",
+      "*://*.amazon.fr/*",
+      "*://*.ebay.fr/*",
+      "*://*.yeggi.com/*"
+    ],
+    "css": ["shopping-dark.css"],
+    "run_at": "document_start"
+  }]
+}

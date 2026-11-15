@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insta Images</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><span class="badge">↓</span><div><h1>Insta Images</h1><p>Photos, vidéos, Reels et stories.</p></div></header>
+  <button id="scan" class="secondary">Analyser le post ou la story</button>
+  <p id="status" role="status" aria-live="polite">Ouvre une publication Instagram pour commencer.</p>
+  <div id="toolbar" hidden><label><input id="select-all" type="checkbox" checked> Tout sélectionner</label><span id="count"></span></div>
+  <div id="images"></div>
+  <button id="download" disabled>Télécharger la sélection</button>
+  <footer>Lance la vidéo dans Instagram avant l’analyse. Carrousel : fais défiler les médias puis analyse à nouveau. Stories : ouvre la story souhaitée et mets-la en pause avant d’ouvrir l’extension.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>

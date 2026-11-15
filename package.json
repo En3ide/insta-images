@@ -1,0 +1,8 @@
+{
+  "name": "insta-images",
+  "version": "1.4.0",
+  "private": true,
+  "description": "Extension Edge et Chrome : médias Instagram et mode sombre pour les sites marchands.",
+  "scripts": { "test": "node --test tests/media.test.cjs" },
+  "engines": { "node": ">=20" }
+}

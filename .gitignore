@@ -1,0 +1,19 @@
+# Independent extension, managed in its own repository.
+/pdf-dark-extension/
+
+# Local build sources, previews and publishing utilities.
+/.local-tools/
+/tests/pdfjs-source/
+/tests/pdf-dark.smoke.mjs
+/tests/pdf-dark-preview.png
+*.zip
+*.tgz
+node_modules/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+.DS_Store
+Thumbs.db
